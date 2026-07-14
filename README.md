@@ -63,7 +63,7 @@ Esta landing page foi criada para o **Roberto**, professor de Jiu-Jitsu com mais
 ## 🔗 Acesso ao Projeto
 
 **O site está disponível em:**  
-👉 [https://GabrielPabloG/guerreirojj/](https://seu-usuario.github.io/guerreirojj/)
+👉 [https://GabrielPabloG/guerreirojj/](https://GabrielPabloG.github.io/guerreirojj/)
 
 **Para rodar localmente:**
 1. Clone este repositório:

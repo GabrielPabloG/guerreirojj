@@ -1249,8 +1249,9 @@ select:focus-visible {
 /* 1. Evita rolagem horizontal em toda a página */
 html,
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
   width: 100%;
+  max-width: 100%;
 }
 
 /* 2. Garante que qualquer grid ou flex não ultrapasse */
@@ -1288,6 +1289,36 @@ body {
   width: 100% !important;
   height: 100% !important;
   border: 0;
+}
+
+@media (min-width:1025px) {
+ .sobre-grid {
+    align-items: stretch;
+  }
+
+  .sobre-copy {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-10); /* espaçamento consistente entre os elementos */
+    height: 100%;
+    justify-content: flex-start; /* não força separação extrema */
+  }
+
+  /* Empurra as tags para o final, mas com um espaçamento natural */
+  .sobre-copy .tag-list {
+    margin-top: auto; /* gruda no final da coluna */
+    padding-top: var(--space-4);
+  }
+
+  /* Ajusta a citação para não ficar tão solta */
+  .pullquote {
+    margin-block: var(--space-10); /* reduz o espaço vertical */
+  }
+
+  /* Remove o margin-bottom dos parágrafos para o gap controlar */
+  .sobre-copy p {
+    margin-bottom: 0;
+  }
 }
 
 /* 5. Ajuste específico para iPhone 15 (largura 393px) e similares */

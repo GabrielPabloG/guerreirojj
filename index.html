@@ -9,7 +9,7 @@
         content="Aulas particulares de Jiu-Jitsu com Roberto, faixa preta 2º grau, em São Paulo (presencial e online). Disciplina, confiança e evolução técnica para todos os níveis. Agende sua 1ª aula grátis.">
     <meta name="keywords"
         content="aulas de jiu-jitsu São Paulo, professor de jiu-jitsu particular, jiu-jitsu para iniciantes, faixa preta jiu-jitsu, Guerreiro Jiu-Jitsu, aula de jiu-jitsu online, jiu-jitsu SP">
-    <meta name="author" content="Guerreiro Jiu-Jitsu — Roberto">
+    <meta name="author" content="Guerreiro Jiu Jitsu — Roberto">
     <meta name="theme-color" content="#0C1536">
 
     <!-- Open Graph -->
@@ -19,6 +19,10 @@
         content="Guerreiro Jiu-Jitsu | Roberto — Professor de Jiu-Jitsu Faixa Preta 2º Grau em São Paulo">
     <meta property="og:description"
         content="Disciplina, confiança e caráter através do Jiu-Jitsu. Aulas particulares presenciais (SP) e online, para todos os níveis. 1ª aula grátis.">
+    <meta property="og:image" content="https://guerreirojj.com.br/uploads/perfil.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://guerreirojj.com.br/">
 
     <!-- Favicon: emblema simplificado inline, sem necessidade de arquivo externo -->
     <link rel="icon" type="image/svg+xml"
@@ -30,6 +34,9 @@
         href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=Work+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap"
         rel="stylesheet">
 
+    <link rel="canonical" href="https://guerreirojj.com.br/">
+
+
     <link rel="stylesheet" href="style.css">
 
     <!-- JSON-LD: negócio local -->
@@ -37,14 +44,24 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Guerreiro Jiu-Jitsu - Roberto Professor de Jiu-Jitsu",
-  "image": "",
-  "description": "Aulas particulares de Jiu-Jitsu com Roberto, faixa preta 2º grau, em São Paulo. Presencial e online, para todos os níveis.",
-  "founder": { "@type": "Person", "name": "Roberto" },
-  "address": { "@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" },
-  "areaServed": "São Paulo, SP",
-  "priceRange": "R$100 - R$200",
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "7" }
+  "name": "Guerreiro Jiu Jitsu - Roberto Professor de Jiu-Jitsu",
+  "image": "https://guerreirojj.com.br/uploads/perfil.jpeg",
+  "telephone": "+5511951075008",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Avenida Pires do Rio, 2050",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "postalCode": "08240-090",
+    "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-23.550520",
+    "longitude": "-46.633308"
+  },
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "priceRange": "From R$200"
 }
 </script>
     <!-- JSON-LD: FAQ -->
@@ -62,8 +79,7 @@
   ]
 }
 </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
 </head>
 
 <body>
@@ -119,8 +135,7 @@
             </g>
         </symbol>
         <symbol id="i-whatsapp" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                d="M17.5 6.5a7.6 7.6 0 0 0-12 9.2L4 21l5.4-1.4A7.6 7.6 0 0 0 21 12.4a7.5 7.5 0 0 0-3.5-5.9zM12.1 19a6.3 6.3 0 0 1-3.2-.9l-.2-.1-2.6.7.7-2.5-.2-.3a6.3 6.3 0 1 1 5.5 3.1zm3.4-4.7c-.2-.1-1.1-.5-1.2-.6-.2-.1-.3-.1-.4.1l-.6.7c-.1.1-.2.2-.4.1a5.1 5.1 0 0 1-2.5-2.2c-.2-.3.2-.3.5-.9.1-.1 0-.2 0-.3l-.6-1.4c-.1-.3-.3-.3-.4-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2 1 2.4c.1.1 1.7 2.6 4.1 3.6.6.2 1 .4 1.4.5.6.2 1.1.1 1.5-.1.5-.1 1.1-.7 1.2-1.3.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3z" />
+            <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
         </symbol>
         <symbol id="i-pin" viewBox="0 0 24 24">
             <g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round">
@@ -208,7 +223,7 @@
     <!-- ============ HEADER / NAV ============ -->
     <header class="site-header" id="site-header">
         <div class="wrap header-inner">
-            <a href="#hero" class="brand" aria-label="Guerreiro Jiu-Jitsu — página inicial">
+            <a href="#hero" class="brand" aria-label="Guerreiro Jiu Jitsu — página inicial">
                 <span class="brand-emblem" aria-hidden="true">
                     <svg viewBox="0 0 44 44">
                         <circle cx="22" cy="22" r="20" fill="var(--ink-deep)" stroke="var(--ouro)" stroke-width="1.6" />
@@ -217,14 +232,14 @@
                             font-weight="800" fill="var(--ouro)" text-anchor="middle">G</text>
                     </svg>
                 </span>
-                <span class="brand-word">GUERREIRO<span class="brand-word-tag">Jiu-Jitsu</span></span>
+                <span class="brand-word">GUERREIRO<span class="brand-word-tag">Jiu Jitsu</span></span>
             </a>
 
             <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
-                <a href="#diferenciais">Diferenciais</a>
-                <a href="#depoimentos">Depoimentos</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#precos">Preços</a>
+                <a href="#diferenciais">Diferenciais do Guerreiro</a>
+                <a href="#depoimentos">Depoimentos <span style="display:none">dos Alunos</span></a>
+                <a href="#sobre">Sobre o Professor</a>
+                <a href="#precos">Valores e Planos</a>
                 <a href="#faq">FAQ</a>
             </nav>
 
@@ -240,10 +255,10 @@
         </div>
 
         <div class="mobile-nav" id="mobile-nav" hidden>
-            <a href="#diferenciais">Diferenciais</a>
-            <a href="#depoimentos">Depoimentos</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#precos">Preços</a>
+            <a href="#diferenciais">Diferenciais do Guerreiro</a>
+            <a href="#depoimentos">Depoimentos dos Alunos</a>
+            <a href="#sobre">Sobre o Professor</a>
+            <a href="#precos">Valores e Planos</a>
             <a href="#faq">FAQ</a>
             <a href="#agendar" class="btn btn-primary">1ª Aula Grátis</a>
         </div>
@@ -256,6 +271,7 @@
             <div class="hero-bg" aria-hidden="true"></div>
             <!-- Imagem do professor como fundo -->
             <div class="hero-image-bg" style="background-image: url('uploads/luta.jpeg');" aria-hidden="true">
+                <img src="uploads/luta.jpeg" alt="Professor Roberto aplicando técnica de Jiu-Jitsu em aula particular em São Paulo" style="display:none;">
             </div>
             <div class="wrap hero-inner">
                 <div class="hero-copy reveal">
@@ -734,11 +750,11 @@
 
             <nav class="footer-col" aria-label="Navegação do rodapé">
                 <h4>Navegação</h4>
-                <a href="#diferenciais">Diferenciais</a>
-                <a href="#depoimentos">Depoimentos</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#precos">Preços</a>
-                <a href="#faq">FAQ</a>
+                <a href="#diferenciais">Diferenciais do Guerreiro Jiu Jitsu</a>
+                <a href="#depoimentos">Depoimentos de Alunos</a>
+                <a href="#sobre">Sobre o Professor</a>
+                <a href="#precos">Valores das aulas e Planos</a>
+                <a href="#faq">FAQ - Perguntas Frequentes</a>
             </nav>
 
             <div class="footer-col">
@@ -760,7 +776,7 @@
         </div>
 
         <div class="wrap footer-bottom">
-            <p>© <span id="year">2026</span> Guerreiro Jiu-Jitsu. Todos os direitos reservados.</p>
+            <p>© <span id="year">2026</span> Guerreiro Jiu Jitsu. Todos os direitos reservados.</p>
         </div>
     </footer>
 
@@ -777,7 +793,22 @@
         document.addEventListener('DOMContentLoaded', function () {
             var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-            $('#whatsapp').mask('(00) 00000-0000');
+            // Máscara de WhatsApp sem jQuery (puro JS)
+            document.getElementById('whatsapp').addEventListener('input', function (e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 11) value = value.slice(0, 11);
+            let formatted = '';
+            if (value.length > 0) {
+                formatted = '(' + value.substring(0, 2);
+                if (value.length > 2) {
+                formatted += ') ' + value.substring(2, 7);
+                if (value.length > 7) {
+                    formatted += '-' + value.substring(7, 11);
+                }
+                }
+            }
+            e.target.value = formatted;
+            });
 
             // Ano no rodapé
             var yearEl = document.getElementById('year');

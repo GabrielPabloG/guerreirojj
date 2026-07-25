@@ -685,19 +685,11 @@ select:focus-visible {
 }
 
 .photo-placeholder {
-    aspect-ratio: 4 / 5;
-    border: 1.5px dashed var(--tatame-border);
-    border-radius: var(--radius-lg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-3);
-    color: var(--aco-muted);
-    background: var(--tatame);
-    font-size: .85rem;
-    text-align: center;
-    padding: var(--space-5);
+  aspect-ratio: 4/5;
+  border: 1.5px dashed var(--tatame-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--tatame);
 }
 
 .video-placeholder {
@@ -1250,4 +1242,86 @@ select:focus-visible {
         flex-direction: column;
         gap: var(--space-3);
     }
+}
+
+/* ===== CORREÇÃO PARA SAFARI/IPHONE ===== */
+
+/* 1. Evita rolagem horizontal em toda a página */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* 2. Garante que qualquer grid ou flex não ultrapasse */
+.grid-4,
+.sobre-grid,
+.form-grid,
+.footer-grid {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* 3. Força todos os itens de grid a terem largura mínima 0 (evita estouro) */
+.grid-4>*,
+.sobre-grid>*,
+.form-grid>*,
+.footer-grid>* {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* 4. Corrige o iframe (caso o Safari ignore o padding-bottom) */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--ink-deep);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+}
+
+/* 5. Ajuste específico para iPhone 15 (largura 393px) e similares */
+@media (max-width: 480px) {
+  /* Força todos os grids a 1 coluna */
+  .grid-4,
+  .sobre-grid,
+  .form-grid,
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-4);
+  }
+
+  /* Ajusta o tamanho da fonte do título para não quebrar */
+  .hero-title {
+    font-size: 2.8rem !important;
+  }
+
+  /* Remove a imagem de fundo do herói (opcional) ou ajusta */
+  .hero-image-bg {
+    background-position: center 30% !important;
+  }
+
+  /* Garante que o vídeo não ultrapasse */
+  .video-wrapper {
+    padding-bottom: 56.25%;
+  }
+
+  /* Se houver elementos com padding extra, reduz */
+  .booking-form {
+    padding: var(--space-5);
+  }
+
+  .price-card {
+    padding: var(--space-4);
+  }
 }

@@ -1315,29 +1315,21 @@ body {
     .sobre-copy {
         display: flex;
         flex-direction: column;
-        gap: var(--space-10);
-        /* espaçamento consistente entre os elementos */
+        justify-content: center;
+        gap: var(--space-6);
         height: 100%;
-        justify-content: flex-start;
-        /* não força separação extrema */
     }
 
-    /* Empurra as tags para o final, mas com um espaçamento natural */
-    .sobre-copy .tag-list {
-        margin-top: auto;
-        /* gruda no final da coluna */
-        padding-top: var(--space-4);
-    }
-
-    /* Ajusta a citação para não ficar tão solta */
     .pullquote {
-        margin-block: var(--space-10);
-        /* reduz o espaço vertical */
+        margin-block: 0;
     }
 
-    /* Remove o margin-bottom dos parágrafos para o gap controlar */
     .sobre-copy p {
         margin-bottom: 0;
+    }
+
+    .sobre-copy .tag-list {
+        margin-top: 0;
     }
 }
 

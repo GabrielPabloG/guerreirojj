@@ -1,7 +1,6 @@
 # 🥋 GuerreiroJJ – Landing Page do Professor Roberto
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=GREEN&style=for-the-badge)
-![GitHub license](https://img.shields.io/github/license/GabrielPabloG/guerreirojj?style=for-the-badge)
 ![GitHub stars](https://img.shields.io/github/stars/seu-usuario/guerreirojj?style=social)
 
 > **Landing page profissional** para o professor de Jiu-Jitsu **Roberto (Guerreiro)** – faixa preta 2º grau.  
@@ -16,7 +15,6 @@
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Acesso ao Projeto](#-acesso-ao-projeto)
 - [Autor](#-autor)
-- [Licença](#-licença)
 
 ---
 
@@ -87,17 +85,3 @@ Abra o arquivo index.html no seu navegador.
 </table>
 
 ---
-
-## 🚀 Como adicionar os arquivos no GitHub
-
-1. **Crie os arquivos** `LICENSE` e `README.md` na raiz do seu repositório.
-2. Faça o **upload** ou **commit** deles.
-3. O GitHub automaticamente exibirá o README na página principal do repositório.
-
----
-
----
-
-## <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="Licença MIT">
-
-Este projeto está licenciado sob a MIT License — veja o arquivo `LICENSE` para detalhes.
